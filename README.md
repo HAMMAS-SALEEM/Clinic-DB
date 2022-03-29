@@ -1,7 +1,5 @@
 # Clinic-DB
 
-# Vet clinic database
-
 Using relational database to create the initial data structure for a clinic. create a table to store patients' information.
 ## Getting Started
 
