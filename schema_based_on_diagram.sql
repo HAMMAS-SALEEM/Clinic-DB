@@ -39,3 +39,29 @@ CREATE TABLE invoice_items(
     invoice_id int CONSTRAINT invoiceItem_invoices_FK REFERENCES invoices(id),
     treatments_id int CONSTRAINT invoiceItem_treatments_FK REFERENCES treatments(id)
 );
+
+SELECT 
+    animals.name as AnimalName, 
+    animals.date_of_birth, 
+    animals.escape_attempts, 
+    animals.neutered, 
+    animals.weight_kg, 
+    species.name as SpecieType, 
+    owners.full_name as OwnersName, 
+    vets.name as VetsName, 
+    vets.age as VetsAge, 
+    vets.date_of_graduation, 
+    visits.date_of_visit 
+FROM animals 
+JOIN 
+    species ON animals.species_id = species.id 
+JOIN 
+    owners ON animals.owner_id = owners.id 
+JOIN 
+    visits ON animals.id = visits.animals_id 
+JOIN 
+    vets ON visits.vets_id = vets.id 
+ORDER BY 
+    visits.date_of_visit 
+DESC 
+LIMIT 1;
