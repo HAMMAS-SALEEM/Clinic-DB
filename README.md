@@ -3,6 +3,7 @@
 Using relational database to create the initial data structure for a clinic. create a table to store patients' information.
 
 ![Diagram](https://raw.githubusercontent.com/microverseinc/curriculum-databases/main/db-structure/images/clinic_diagram.png?token=GHSAT0AAAAAABSVJLCHG2B4GBXHVNZXLGMUYSL76BA) 
+
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
@@ -10,6 +11,10 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Use [schema_based_on_diagram.sql](./schema.sql) to create all tables.
 **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
+## Built With
+
+- SQL
+- PostgreSQL
 
 ## Authors
 
